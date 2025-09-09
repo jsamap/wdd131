@@ -1,0 +1,145 @@
+/* #region Base */
+:root {
+    --primary-color: indigo;
+    --secondary-color: #4d004d;
+    --accent1-color: yellow;
+    --accent2-color: #999999;
+    --accent3-color: #33334d;
+    --font1-color: black;
+    --font2-color: white;
+    --font3-color: indigo;
+    --heading-font: "Merriweather", serif;
+    --body-font: "Roboto", sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--body-font);
+    color: var(--font1-color);
+    /* max-width: 1000px; */
+    margin: 0 auto;
+
+}
+/* #endregion */
+
+header {
+	background-color: var(--primary-color);
+    color: var(--font2-color);
+	display: grid;
+	grid-gap: 1rem;
+	padding: 20px;
+}
+header, main {
+	margin: 0 auto;
+}
+main {
+    max-width: 800px;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+}
+h1 {
+	font-size: 2rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.open a {
+	display: block;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 25px;
+    place-items: center;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* #region Hamburger menu */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: var(--font2-color);
+	position: absolute;
+	top: 1.75rem;
+	right: 1rem;
+}
+#menu::before {
+	content: "☰";
+}
+#menu.open::before {
+	content: "❌";
+}
+.navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	list-style: none;
+}
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	font-size: larger;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+.open a {
+	display: block;
+}
+/* #endregion */
+
+/* #region Nav*/
+nav ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+}
+/* nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+	font-size: larger;
+}
+nav a:hover {
+	color: var(--accent2-color);
+} */
+.nav-title {
+	font-size: 2rem;
+    text-align: center;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+/* #endregion */
+
+/* #region Footer */
+footer {
+    color: var(--font2-color);
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 0.5rem;
+}
+#footer {
+    font-size: 1rem;
+}
+#lastModified {
+    color: var(--accent1-color);
+}
+.lastModified {
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+}
+/* #endregion */
