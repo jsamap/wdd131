@@ -70,6 +70,9 @@ img {
 	top: 1.75rem;
 	right: 1rem;
 }
+#menu span{
+	font-size: 0;
+}
 #menu::before {
 	content: "☰";
 }
