@@ -1,0 +1,128 @@
+:root {
+    --heading-font: "Merriweather", serif;
+    --body-font: "Roboto", sans-serif;
+    --main-color: #4997D0;
+    --footer-color: #4997D0;
+    --separator-color: #fcff3d;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header, main, footer {
+    width: 100%;
+    margin: 0 auto;
+    font-family: var(--body-font);
+    font-size: 0.9rem;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+}
+header {
+    background-color: var(--main-color);
+    text-align: center; 
+}
+h1 {
+    width: 50%;
+    height: 5rem;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    background-color: white;
+}
+h2 {
+    padding-top: 1rem;
+}
+.hero img {
+    width: 100%;
+    vertical-align: middle;
+}
+.weather, .data {
+    text-align: center;
+}
+.weather span{
+    font-size: 3rem;
+}
+.weather table, .data table {
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+.label {
+    font-weight: bold;
+  text-align: right;
+  padding: 5px;
+}
+.value {
+  text-align: left;
+  padding: 5px;
+}
+.separator {
+    width: 100%;
+    height: 3px;
+    background-color: var(--separator-color);
+}
+source {
+    height: 0;
+}
+#wind-chill {
+    font-size: 1rem;
+}
+
+/* #region Footer */
+footer {
+    color: black;
+    background-color:var(--footer-color);
+    text-align: center;
+    padding: 0.5rem;
+}
+#lastModified {
+    color: black;
+    font-size: 0.8rem;
+}
+.lastModified {
+    margin-top: 0.5rem;
+}
+/* #endregion */
+
+@media (min-width: 800px) {   
+    h1 {
+        width: 400px;
+    }
+}
+@media (min-width: 800px) {
+    #weather-header::after {
+        content: '🌤️';
+    }
+    #weather-icon {
+        display: none;
+    }
+    .weather, .data {
+        background-color: rgba(255, 255, 255, 0.8);
+        /* border: 3px solid var(--separator-color); */
+        box-shadow: 5px 5px 10px  rgba(0,0,0,1);
+        padding: 0.5rem; 
+    }
+    .weather {
+        position: absolute;
+        right: 50px;
+        bottom: 50px;
+    }
+    .data {
+        position: absolute;
+        left: 50px;
+        top: 50px;
+    }
+    main {
+        position: relative;
+    }
+    .between {
+        display: none;
+    }
+    h2 {
+        background-color: var(--separator-color);
+        position: relative;
+        left: -20px;
+        padding: 0.5rem 1.5rem;
+        text-align: left;
+    }
+}

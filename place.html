@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Jared Samayoa</title>
+    <meta name="description" content="Place website">
+    <meta name="author" content="Jared Samayoa">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Guatemala</h1>
+    </header>
+    <main>
+        <div class="separator"></div>
+        <div class="hero">
+            <picture>
+                <source srcset="images/zapote-large.webp" media="(min-width: 500px)">
+                <img src="images/zapote-small.webp" alt="Zapote picture">
+            </picture>
+        </div>
+        <div class="separator between"></div>
+        <div class="data">
+            <h2>Data</h2>
+            <table>
+                <tr>
+                    <td class="label">Area:</td>
+                    <td class="value">108,889 km²</td>
+                </tr>
+                <tr>
+                    <td class="label">Population:</td>
+                    <td class="value">19,570,000</td>
+                </tr>
+                <tr>
+                    <td class="label">Capital:</td>
+                    <td class="value">Guatemala</td>
+                </tr>
+                <tr>
+                    <td class="label">Languages:</td>
+                    <td class="value">Spanish</td>
+                </tr>
+                <tr>
+                    <td class="label">Currency:</td>
+                    <td class="value">Quetzal</td>
+                </tr>
+                <tr>
+                    <td class="label">Time Zone:</td>
+                    <td class="value">UTC-6</td>
+                </tr>
+                <tr>
+                    <td class="label">Calling Code:</td>
+                    <td class="value">+502</td>
+                </tr>
+                <tr>
+                    <td class="label">Internet TLD:</td>
+                    <td class="value">.gt</td>
+                </tr>
+            </table>
+        </div>
+        <div class="separator between"></div>
+        <div class="weather">
+            <h2 id="weather-header">Weather</h2>
+            <span id="weather-icon">⛅</span>
+            <table>
+                <tr>
+                    <td class="label">Temperature:</td>
+                    <td class="value">19 °C</td>
+                </tr>
+                <tr>
+                    <td class="label">Conditions:</td>
+                    <td class="value">Partly Cloudy</td>
+                </tr>
+                <tr>
+                    <td class="label">Wind:</td>
+                    <td class="value">5 km/h</td>
+                </tr>
+                <tr>
+                    <td class="label">Wind Chill:</td>
+                    <td class="value"><span id="wind-chill">x</span></td>
+                </tr>
+            </table>
+        </div>
+        <div class="separator"></div>
+    </main>
+    <footer>
+        <p id="footer">&copy;<span id="currentYear"></span>&nbsp;&nbsp;&#129302;&nbsp;&nbsp;Jared Samayoa&nbsp;&nbsp;&#129302;&nbsp;&nbsp;Guatemala</p>
+        <p class="lastModified"><span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
