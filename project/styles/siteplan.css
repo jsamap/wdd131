@@ -47,18 +47,28 @@ p, ul {
 .color1 {
     color: var(--primary-color);
     font-weight: bold;
-    font-size: 1.5rem;
 }
 .color2 {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+.square1 {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.square2 {
     color: var(--secondary-color);
     font-weight: bold;
     font-size: 1.5rem;
 }
 .font1 {
     font-family: var(--heading-font);
+    font-weight: bold;
 }
 .font2 {
     font-family: var(--body-font);
+    font-weight: bold;
 }
 #wf-dt {
     width: 850px;
