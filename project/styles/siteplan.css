@@ -1,0 +1,68 @@
+/* #region Base */
+:root {
+    --primary-color: #005580;
+    --secondary-color: #50783A;
+    --accent1-color: yellow;
+    --accent2-color: #999999;
+    --accent3-color: #33334d;
+    --font1-color: black;
+    --font2-color: #f2f2f2;
+    --font3-color: white;
+    --heading-font: "Merriweather", serif;
+    --body-font: "Roboto", sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--body-font);
+    color: var(--font1-color);
+}
+header, main, footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h1, h2 {
+    font-family: var(--heading-font);
+}
+/* #endregion */
+h1 {
+    text-align: center;
+    padding: 1rem;
+    color: var(--font3-color);
+    background-color: var(--primary-color);
+}
+h2 {
+    color: var(--secondary-color);
+    padding: 2rem 0.5rem 1rem 0.5rem;
+}
+img {
+    width: 200px;
+}
+p, ul {
+    padding:  0 1.5rem;
+}
+.color1 {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.color2 {
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.font1 {
+    font-family: var(--heading-font);
+}
+.font2 {
+    font-family: var(--body-font);
+}
+#wf-dt {
+    width: 850px;
+}
+#wf-mb {
+    width: 300px;
+}
