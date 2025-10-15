@@ -1,0 +1,132 @@
+/* #region Base */
+:root {
+    --primary-color: #013E5C;
+    --secondary-color: #DAE6EC;
+    --accent1-color: yellow;
+    --accent2-color: indigo;
+    --font1-color: black;
+    --font2-color: white;
+    --heading-font: "Merriweather", serif;
+    --body-font: "Roboto", sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header, main, footer {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+header {
+    font-family: var(--heading-font);
+}
+body {
+    font-family: var(--body-font);
+    color: var(--font1-color);
+}
+/* #endregion */
+
+/* #region Header */
+h1 {
+    display: block;
+    text-align: center;
+    color: var(--font2-color);
+    background-color: var(--primary-color);
+    padding: 1.25rem;
+    font-size: 1.35rem;
+}
+/* #endregion */
+
+/* #region Main */
+main {
+    padding: 1rem 0;
+    max-width: 500px;
+}
+form {
+    background-color: var(--secondary-color);
+    width: 100%;
+    padding: 1rem;
+    text-align: left;
+}
+label {
+    padding: 0.5rem;
+}
+input[type="text"], input[type="submit"], input[type="date"], textarea, select, option {
+    width: 100%;
+    height: 40px;
+    padding: 0.5rem;
+}
+p {
+    text-align: left;
+}
+textarea {
+    height: 100px;
+    font-size: 0.9rem;
+}
+.rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+}
+.rating label {
+    width: 115px;
+    text-align: center;
+}
+.feature {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.5rem;
+}
+.feature *{
+    padding: 0.1rem;
+}
+.optional {
+    color: darkblue;
+    font-size: 0.8rem;
+}
+input[type="submit"] {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+/* input[type="radio"] {} */
+
+/* #endregion */
+
+/* #region Footer */
+footer {
+    color: var(--font2-color);
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1rem;
+}
+#footer {
+    font-size: 1.1rem;
+    text-align: center;
+}
+#lastModified {
+    font-size: 1rem;
+    text-align: center;
+}
+.lastModified {
+    margin-top: 0.5rem;
+    text-align: center;
+}
+/* #endregion */
+
+/* #region Review */
+.container {
+    padding: 2rem 0 ;
+}
+.result {
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 1rem 0;
+}
+.result span {
+    font-weight: bold;
+}
+/* #endregion */

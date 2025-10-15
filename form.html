@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form | WDD131</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Product Review Form">
+    <meta name="author" content="Jared Samayoa">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            
+            <label>Product Name*<br>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </label>
+            <br><br>
+            
+            <p>Overall Rating*</p>
+            <div class="rating">
+                <label>☆<br><input type="radio" id="radio1" name="rating" value="1" required></label>
+                <label>☆☆<br><input type="radio" id="radio2" name="rating" value="2" required></label>
+                <label>☆☆☆<br><input type="radio" id="radio3" name="rating" value="3" required></label>
+                <label>☆☆☆☆<br><input type="radio" id="radio4" name="rating" value="4" required></label>
+                <label>☆☆☆☆☆<br><input type="radio" id="radio5" name="rating" value="5" required></label>    
+            </div>
+            
+            <label>Date of Installation*<br><input type="date" id="date" name="date" required></label>
+            <br><br>
+
+            <p>Which features did you found useful in the product?<br><i>(Check all that apply)</i></p>
+            <div class="feature">
+                <label><input type="checkbox" id="durability" name="durability" value="yes"> Durability</label>
+                <label><input type="checkbox" id="ease" name="ease" value="yes"> Ease of Use</label>
+                <label><input type="checkbox" id="performance" name="performance" value="yes"> Performance</label>
+                <label><input type="checkbox" id="design" name="design" value="yes"> Design</label>
+            </div>
+            <br>
+
+            <label>Written Review <span class="optional">(Optional)</span><br><textarea id="review" name="review"></textarea></label>
+            <br><br>
+
+            <label>Your Name <span class="optional">(Optional)</span><br><input type="text" id="name" name="name"></label>
+            <br><br>
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p id="footer">&copy;<span id="currentYear"></span>&nbsp;&nbsp;&#129302;&nbsp;&nbsp;Jared Samayoa&nbsp;&nbsp;&#129302;&nbsp;&nbsp;Guatemala</p>
+        <p class="lastModified"><span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
