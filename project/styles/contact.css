@@ -1,0 +1,311 @@
+/* #region Base */
+:root {
+    --primary-color: #20485D;
+    --secondary-color: #3D5B2C;
+    --tertiary-color: #754300;
+    --accent1-color: yellow;
+    --accent2-color: #999999;
+    --accent3-color: #EBB265;
+    --font1-color: black;
+    --font2-color: #f2f2f2;
+    --font3-color: white;
+    --heading-font: "Merriweather", serif;
+    --body-font: "Roboto", sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, h2, h3, h4 {
+    font-family: var(--heading-font);
+}
+body {
+    font-family: var(--body-font);
+    color: var(--font1-color);
+    margin: 0 auto;
+
+}
+button {
+    font-family: var(--body-font);
+    font-size: 1rem;
+    width: 150px;
+    padding: 0.5rem;
+}
+/* #endregion */
+
+/* #region Body */
+header {
+	background-color: black;
+    color: var(--font2-color);
+	display: grid;
+	padding: 20px;
+}
+header, main {
+	margin: 0 auto;
+}
+main {
+    max-width: 1000px;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+}
+h1 {
+	font-size: 2rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+h2 {
+	font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+    color: var(--secondary-color);
+}
+h3 {
+    color: var(--tertiary-color);
+	font-size: 1.2rem;
+}
+.header {
+    display: flex;
+    align-items: center;
+}
+header img {
+    width: 100px;
+}
+.open a {
+	display: block;
+}
+.upper{
+    padding-bottom: 2rem;
+}
+.hero{
+    padding: 2rem;
+    padding-bottom: 0;
+}
+.hero-img{
+    padding: 2rem;
+    padding-bottom: 0;
+}
+.upper img {
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+}
+.hero{
+    text-align: center;
+}
+.hero button{
+    padding: 0.5rem;
+    text-align: center;
+}
+.hero p{
+    padding: 1rem 0;
+}
+.hero h2 {
+    padding: 0rem;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+/* #endregion */
+
+/* #region Nav/Hamburger menu */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: var(--font2-color);
+	position: absolute;
+	top: 3rem;
+	right: 1rem;
+    width: 50px;
+}
+#menu span{
+	font-size: 0;
+	color: black;
+}
+#menu::before {
+	content: "☰";
+}
+#menu.open::before {
+	content: "❌";
+}
+.navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	list-style: none;
+}
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	font-size: larger;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+.navigation a.active {
+    color: var(--accent3-color);
+}
+.open a {
+	display: block;
+}
+nav ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+}
+/* #endregion */
+
+/* #region Banner */
+.banner {
+    padding: 1rem;
+}
+/* #endregion */
+
+/* #region Form */
+.form {
+    max-width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-mid {
+    max-width: 600px;
+    padding: 1rem;
+    border: 1px solid var(--primary-color);
+}
+form {
+    margin: 0 auto;
+}
+form input[type="text"],input[type="email"],input[type="tel"] {
+    width: 100%;
+    height: 40px;
+    padding: 0 1rem;
+}
+form input[type="submit"] {
+    height: 40px;
+    padding: 0 1rem;
+    margin: 0 auto;
+
+}
+.italic {
+    font-style: italic;
+}
+.btn {
+    text-align: center;
+}
+
+
+/* #endregion */
+
+/* #region Why Join */
+.why {
+    padding: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.why img {
+    max-width: 250px;
+}
+.why div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    place-items: center;
+}
+/* #endregion */
+
+/* #region Footer */
+footer {
+    color: var(--font2-color);
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 0.5rem;
+}
+#footer {
+    font-size: 1rem;
+}
+#lastModified {
+    color: var(--font2-color);
+}
+.lastModified {
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+}
+/* #endregion */
+
+/* #region Large */
+@media (min-width: 700px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 25px;
+        place-items: center;
+    }
+    h1 {
+        font-size: 2rem;
+        margin-left: 0;
+        text-align: center;
+    }
+    h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    #menu {
+        display: none; /* hide hamburger button */
+    }
+    .navigation {
+        flex-direction: row;
+    }
+    
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+    header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	nav ul {
+		justify-content: flex-end;
+		flex-direction: row;
+	}
+	nav a {
+		flex: 1 1 100%;
+	}
+
+    
+    .upper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .upper img {
+        text-align: center;
+    }
+    .hero{
+        text-align: left;
+        padding-bottom: 2rem;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    .hero *{
+        padding: 0;
+        text-align: left;
+    }
+    .upper img {
+        width: 100%;
+    }
+}
+/* #endregion */

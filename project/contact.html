@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us | Tail Trails</title>
+    <meta name="description" content="Tail Trails home page">
+    <meta name="author" content="Jared Samayoa">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/contact.css">
+    <script src="scripts/contact.js" defer></script>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <button type="button" id="menu"><span>Menu</span></button>
+        <div class="header">
+            <img src="images/logo-white.webp" alt="TT logo">
+            <h1>TAIL<br>TRAILS</h1>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="home" id="home">Home</a></li>
+                <li><a href="trips" id="trips">Trips</a></li>
+                <li><a href="contact" id="contact" class="active">Join Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="banner">
+            <h2>Adventure is better with a furry friend</h2>
+            <img src="images/k-beach-paws.webp" alt="Paws in sand">
+        </div>
+        <div class="form">
+            <h2>Join the pack today!</h2>
+            <div class="form-mid">
+                <form action="review.html" method="get">
+                    <h3>Sign me up!</h3><br>
+                    <label>First Name <br><input type="text" id="fname" name="fname" required></label>
+                    <br><br>
+                    <label>Last Name <br><input type="text" id="lname" name="lname" required></label>
+                    <br><br>
+                    <label>Email <br><input type="email" id="email" name="email" required></label>
+                    <br><br>
+                    <label>Phone <br><input type="tel" id="phone" name="phone" required></label>
+                    <br><br>
+                    <label>Dog Name <br><input type="text" id="dname" name="dname"></label>
+                    <br><br>
+                    <label class="italic"><input type="checkbox" id="accept" name="accept" value="yes" required> I accept to be contacted by using any of these methods.</label>
+                    <br><br>
+                    <div class="btn">
+                        <input type="submit" id="send" value="SEND INFO">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="why">
+            <h2>Why join Tail Trails?</h2>
+            <div>
+                <div>
+                    <img src="images/j-happy.webp" alt="">
+                    <h3>Be<br>Happy</h3>
+                </div>
+                <div>
+                    <img src="images/j-friends.webp" alt="">
+                    <h3>Make<br>Friends</h3>
+                </div>
+                <div>
+                    <img src="images/j-explore-2.webp" alt="">
+                    <h3>Explore &<br>Connect</h3>
+                </div>
+                <div>
+                    <img src="images/j-equipment.webp" alt="">
+                    <h3>Get<br>Started</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p id="footer">&copy;<span id="currentYear"></span>&nbsp;&nbsp;&#129302;&nbsp;&nbsp;Jared Samayoa&nbsp;&nbsp;&#129302;&nbsp;&nbsp;Guatemala</p>
+        <p class="lastModified"><span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
